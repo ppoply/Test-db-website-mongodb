@@ -7,8 +7,9 @@
   if(check_signin()){
     header("Location: welcome.php");  
   }
+?>
 
-
+<?php
 
 	$uname = $_POST['username'];
 	$temp_pass = $_POST['password'];
@@ -20,7 +21,7 @@
 	}
 
 	else{
-		$pass = $query["Password"];
+		$pass = $find["Password"];
 		if(password_verify($temp_pass,$pass)){
 			$logged = user_login($uname);
 

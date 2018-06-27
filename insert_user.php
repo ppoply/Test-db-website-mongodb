@@ -25,7 +25,7 @@
 	$query = check_user($uname);
 	$pquery = password_check($temp_pass,$confirm_pass);
 
-	if($query=true && $pquery==true){
+	if($query==true && $pquery==true){
 		signup($insertArray);
 		header("Location: login.php");
 	}
@@ -33,7 +33,7 @@
 	else if(!($query)){
 		echo "Username already exists. Please try another one !";
 	}
-	else if(!(pquery)){
+	else if(!($pquery)){
 		echo "Passwords do not match";
 	}
 
