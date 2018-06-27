@@ -43,7 +43,6 @@
       
  </div>
  
-<div id="error"></div>
 
  <div class="yeah">  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
  </div>
@@ -52,8 +51,8 @@
  	<p>Already have an account? <a href="login.php">Login here</a></p>
       <p class="mt-5 mb-3 text-muted">&copy; 2018-20XX Parth Poply</p>
 
-      <script src="check_error.js" type="text/javascript"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+     
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     </form>
   </body>
