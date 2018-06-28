@@ -20,9 +20,16 @@
 			return false;
 		}
 	}
+
 	function password_check($pass,$cpass){
 
 		return($pass==$cpass);
+		
+	}
+
+	function password_lencheck($pass){
+
+		return(!(strlen($pass) < 8));
 
 	}
 
