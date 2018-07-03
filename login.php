@@ -1,7 +1,8 @@
-/*File for handling Login requests with proper verification and error handling */
+
 
 <?php
   
+/*File for handling Login requests with proper verification and error handling */
 
   require_once 'connect.php'; 
   require_once 'functions.php';
@@ -18,7 +19,8 @@
       $uname = $_POST['username'];
       $temp_pass = $_POST['password'];
       $search = array("Username"=>$uname);
-      $find = $collection->findOne($search); /* checking for username in global collection */
+      $find = $collection->findOne($search); 
+      /* checking for username in global collection */
     
       if(empty($find)){
         $username_err = 'No account found with that username.';
@@ -27,7 +29,8 @@
       else{
         $pass = $find["Password"];
         if(password_verify($temp_pass,$pass)){  
-          $logged = user_login($uname); /*Successfull login if password matches to the one in database */
+          $logged = user_login($uname); 
+          /* Successfull login if password matches to the one in database */
     
     
           if($logged){
@@ -45,8 +48,9 @@
 
  ?>
 
-// Template for login form with proper validation
+
 <html lang="en">
+<!-- Template for login form with proper validation -->
   <head>
 
     <title>Log in</title>

@@ -1,6 +1,7 @@
-/* File containing all the functions needed during the processing of data (for code reusability) */
 
 <?php
+/* File containing all the functions needed during the processing of data (for code reusability) */
+
 	session_start();
 
 	function signup($doc){

@@ -1,6 +1,7 @@
-/* File for handling registration with proper validation and error handling  */
+
 <?php
-  
+  /* File for handling registration with proper validation and error handling  */
+
   require_once 'connect.php';
   require_once 'functions.php';
 
@@ -49,9 +50,10 @@
   }
   
 ?>
-//Template for Signup form with proper validation 
+
 <!doctype html>
 <html lang="en">
+<!--Template for Signup form with proper validation -->
   <head>
 
     <title>Sign Up</title>

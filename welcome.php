@@ -1,6 +1,6 @@
-//Header file upon successfull login
-<?php
 
+<?php
+//Header file upon successfull login
     require_once 'functions.php';
 
     if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
@@ -12,9 +12,10 @@
          echo "Welcome $name!!!";
     }
 ?>
- //Template for welcome page 
+
 <!DOCTYPE html>
 <html lang="en">
+ <!--Template for welcome page -->
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>

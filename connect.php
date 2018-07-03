@@ -1,6 +1,7 @@
-/* File for connection to server and creation of collection for Users info */
+
 
 <?php
+/* File for connection to server and creation of collection for Users info */
 	try{
 		$conn = new MongoClient();
 		//echo "Connection to db successfully<br>";
