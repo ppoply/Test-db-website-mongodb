@@ -1,3 +1,4 @@
+/* File for handling registration with proper validation and error handling  */
 <?php
   
   require_once 'connect.php';
@@ -24,7 +25,7 @@
         "Password" => $pass
       );
     
-    
+      //Checking for validation errors
       $query = check_user($uname);
       $pquery = password_check($temp_pass,$confirm_pass);
       $plquery = password_lencheck($temp_pass);
@@ -48,7 +49,7 @@
   }
   
 ?>
-
+//Template for Signup form with proper validation 
 <!doctype html>
 <html lang="en">
   <head>

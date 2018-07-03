@@ -1,3 +1,4 @@
+//Header file upon successfull login
 <?php
 
     require_once 'functions.php';
@@ -11,7 +12,7 @@
          echo "Welcome $name!!!";
     }
 ?>
- 
+ //Template for welcome page 
 <!DOCTYPE html>
 <html lang="en">
 <head>

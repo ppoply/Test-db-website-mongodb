@@ -1,3 +1,5 @@
+/* File for connection to server and creation of collection for Users info */
+
 <?php
 	try{
 		$conn = new MongoClient();

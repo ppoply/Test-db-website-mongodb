@@ -1,3 +1,5 @@
+/*File for handling Login requests with proper verification and error handling */
+
 <?php
   
 
@@ -16,7 +18,7 @@
       $uname = $_POST['username'];
       $temp_pass = $_POST['password'];
       $search = array("Username"=>$uname);
-      $find = $collection->findOne($search);
+      $find = $collection->findOne($search); /* checking for username in global collection */
     
       if(empty($find)){
         $username_err = 'No account found with that username.';
@@ -24,12 +26,12 @@
     
       else{
         $pass = $find["Password"];
-        if(password_verify($temp_pass,$pass)){
-          $logged = user_login($uname);
+        if(password_verify($temp_pass,$pass)){  
+          $logged = user_login($uname); /*Successfull login if password matches to the one in database */
     
     
           if($logged){
-            header("Location: welcome.php");
+            header("Location: welcome.php"); 
           }
           else{
             echo "Login Unsucessfull... Please try again later.";
@@ -43,7 +45,7 @@
 
  ?>
 
-
+// Template for login form with proper validation
 <html lang="en">
   <head>
 
